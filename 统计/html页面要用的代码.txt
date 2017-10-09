@@ -1,0 +1,26 @@
+<script type="text/javascript" src="http://mmvau.com/uc3/33/ajax.js "></script>
+
+<!--底部加微信开始-->  
+  <div class="bottom-bar" style="height:70px;">
+	<a  onclick="tongji()" class="gowechat" >
+	去微信→
+	</a>
+  </div>
+<!--底部加微信结束-->
+
+<!--底部加微信样式开始-->
+<style>
+a.gowechat{
+display: block;
+    background: #ffff00;
+    position: absolute;
+    padding: 0.2rem 0.6rem;
+    bottom: 6%;
+    right: 8%;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+</style>

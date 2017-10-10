@@ -1,14 +1,14 @@
-<script type="text/javascript" src="http://mmvau.com/uc3/33/ajax.js "></script>
+ï»¿<script type="text/javascript" src="http://mmvau.com/uc3/33/ajax.js "></script>
 
-<!--µ×²¿¼ÓÎ¢ÐÅ¿ªÊ¼-->  
+<!--åº•éƒ¨åŠ å¾®ä¿¡å¼€å§‹-->  
   <div class="bottom-bar" style="height:70px;">
 	<a  onclick="tongji()" class="gowechat" >
-	È¥Î¢ÐÅ¡ú
+	åŽ»å¾®ä¿¡â†’
 	</a>
   </div>
-<!--µ×²¿¼ÓÎ¢ÐÅ½áÊø-->
+<!--åº•éƒ¨åŠ å¾®ä¿¡ç»“æŸ-->
 
-<!--µ×²¿¼ÓÎ¢ÐÅÑùÊ½¿ªÊ¼-->
+<!--åº•éƒ¨åŠ å¾®ä¿¡æ ·å¼å¼€å§‹-->
 <style>
 a.gowechat{
 display: block;
@@ -22,5 +22,4 @@ display: block;
     text-decoration: none;
     font-weight: bolder;
 }
-
 </style>

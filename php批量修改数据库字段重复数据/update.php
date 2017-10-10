@@ -1,4 +1,7 @@
 ﻿<?php
+/**
+ * cauthor CXINT
+ */
 //排除重复并重置序号
 ini_set("display_errors","Off");
 error_reporting(E_ALL^E_NOTICE^E_WARNING);

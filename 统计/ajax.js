@@ -1,4 +1,4 @@
-function tongji(){
+ï»¿function tongji(){
 	//alert('asdf');
 	
 	var url = window.location.href;
@@ -13,7 +13,8 @@ function tongji(){
 			//alert(data);
 		}
 	});
-	setTimeout("tiaozhuang()",100);//Ìø×ªµ½Î¢ÐÅ
+
+	setTimeout("tiaozhuang()",100);//è·³è½¬åˆ°å¾®ä¿¡
 	
 }
 

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html data-dpr="1">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+</head>
+
+<body>
+
+<button class="customer_save">点击</button>
+</body>
+<script>
+//添加客户资料
+$(document).ready(function(){
+	$('.customer_save').click(function(){
+		   //alert('adsfds');
+			var customer_phone='1';
+			$.ajax({
+				url:'http://www.mmvau.com/test_weixin/test.php',
+				dataType:'json',
+				type:'POST',
+				data:'customer_phone='+customer_phone,
+				success: function(data) {
+					alert(data.weixin);
+				}
+			});
+			
+		}
+	);
+})
+</script>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>顶部大图广告带深缩功能</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script language="javascript" src="js/jquery.js"></script>
+</head>
+<body>
+
+	<div class="wrapper" id="snActive-wrap"> 
+		<em title="关闭广告">关闭</em>
+	</div>
+
+<script type="text/javascript">
+/*
+* 宽窄屏切换
+* */
+var bigscreen = false;
+if ( screen.width>=1200 ) {
+bigscreen = true;
+var bodyTag = document.getElementsByTagName("body")[0],
+bodyClassName = bodyTag.getAttribute("className") || bodyTag.getAttribute("class");
+bodyClassName = bodyClassName ? bodyClassName+" " : "";
+bodyTag.className = bodyClassName+"root1200";
+}
+
+</script>
+ 
+
+<script type="text/javascript">
+~function (){
+var snActive = window.snActive = document.getElementById("snActive-wrap"),
+a = snActive.getElementsByTagName("a"),
+h = 0, w, imgSrc = [];
+if (bigscreen){
+w = 1190;
+imgSrc[0] = "images/1390124030537_1200.jpg";// 40
+imgSrc[1] = "images/1390124049068_1200.jpg";//  500
+} else {
+w = 990;
+imgSrc[0] = "images/1390124028186.jpg";// 40
+imgSrc[1] = "images/1390124043025.jpg";//  500
+}
+snActive.style.overflow = 'hidden';
+a[0].style.display = "none";
+a[0].innerHTML += '<img width="' + w + '" height="40" src="' + imgSrc[0] + '" style="display:block" />';
+if(a[1]){
+a[1].innerHTML += '<img width="' + w + '" height="500" src="' + imgSrc[1] + '" style="display:block" />';
+}
+}();
+
+//关闭通栏广告
+var snActive = $(snActive),
+hideImg = snActive.find('a:hidden'),
+em = snActive.find("em");
+timeout = !1;
+if(hideImg[0]) {
+timeout = setTimeout(function(){
+snActive.animate({height:40},600,function(){
+hideImg.siblings('a:visible').hide();
+hideImg.show();
+em.show().live("click",function(){
+snActive.slideUp(300);
+});
+});
+}, 3000)
+}
+</script>
+
+</body>
+</html>

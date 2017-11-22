@@ -1,0 +1,7 @@
+多种网页顶部导航固定效果（jQuery），有多种固定效果（翻转、伸缩等）可供选择，有部分使用了css3。兼容主流浏览器，懒人图库推荐下载！
+
+使用方法：
+1、head区域引用文件normalize.css, component.css及modernizr.custom.js, jquery.min.js, waypoints.min.js
+2、先在对应的section标签上加上class ha-waypoint， 标题部分加上id ha-header, 详见example.html
+
+*更多代码请访问：懒人图库 www.lanrentuku.com/js/
